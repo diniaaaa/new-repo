@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gallery</title>
+</head>
+<body>
+ 
+    <main data-active-index="0" data-debug="false">
+        <div class="card-stack">
+          <div class="card"><img src="gua.jpeg" /></div>
+          <div class="card"><img src="iya.jpeg" /></div>
+          <div class="card"><img src="hm.jpeg" /></div>
+          <div class="card"><img src="y.jpeg" /></div>
+          <div class="card"><img src="ppp.jpeg" /></div>
+        </div>
+        <div class="scroller">
+          <div class="scroll-item"></div>
+          <div class="scroll-item"></div>
+          <div class="scroll-item"></div>
+          <div class="scroll-item"></div>
+          <div class="scroll-item"></div>
+        </div>
+      </main>
+      
+      <!-- Everything below this line is for the demo only -->
+      <div class="warning">
+        <span>Mouse drag not supported. Use responsive mode or a touch pad to scroll.</span>
+      </div>
+      
+     
+      
+      <!-- Warn pointer down -->
+      <script>
+       const warn = () => {
+         document.querySelector('.warning').classList.toggle('show');
+         setTimeout(() => document.querySelector('.warning').classList.toggle('show'), 3000);
+       };
+        document.querySelector('main').addEventListener('mousedown', warn);
+      </script>
+    <script  src="main.js"></script>
+
+</body>
+</html>

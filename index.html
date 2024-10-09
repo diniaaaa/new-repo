@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<!-- AOS Library JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+    <section id="home">
+        <div class="background-image"></div>
+        <div class="intro">
+            <h1>Hello, I'm <span class="highlight">Dinia</span></h1>
+            <p>I'm a student at SMKN 1 GEDONG TATAAN majoring in Software Engineering.</p>
+            <button onclick="scrollToAbout()">Learn More</button>
+        </div>
+    </section>
+
+    <section id="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <div class="about-content">
+
+            <p>Hi! I'm Dinia, a web developer passionate about creating stunning and efficient websites. I love solving problems, coding, and collaborating with like-minded individuals. I'm currently studying at SMKN 1 Gedong Tataan, majoring in Software Engineering, and I'm in the 11th grade. 
+            </p>
+        </div>
+    </section>
+
+    <section id="study" data-aos="zoom-out">
+        <h2>Riwayat Pendidikan</h2>
+        <div class="study-content">
+            <center><p>TK Tunas Bangsa 2013-2014<br>SDN 46 Gedong Tataan 2014-2020 <br> SMPN 22 Pesawaran 2020-2023 <br> SMKN 1 Gedong Tataan 2023-2026</p></center>
+    </section>
+
+    <section id="Gallery" data-aos="fade-up">
+        <div class="gallery-content">
+            <h2>Gallery</h2>
+        </div>
+    </section>
+
+    <section id="image" data-aos="fade-up">
+        <div class="image-content">
+            <img src="gua.jpeg" height="200px" border="10px" alt="" srcset="">
+            <img src="iya.jpeg" height="200px" border="10px" alt="">
+            <img src="foto.jpeg" height="200px" border="10px" alt="">
+            <img src="y.jpeg" height="200px" border="10px" alt="" srcset="">
+        </div>
+
+    </section>
+    
+    <section id="skills" data-aos="fade-up">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>        
+        </ul>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" data-aos="zoom-out">
+                <h3>Project 1</h3>
+                <p><a href="web.html">My first project is a website using tables via HTML</a>.</p>
+            </div>
+            <div class="project-card" data-aos="fade-up">
+                <h3>Project 2</h3>
+                <p><a href="form2.html">Form using HTML</a></p>
+            </div>
+            <div class="project-card" data-aos="zoom-in">
+                <h3>Project 3</h3>
+                <p>Portfolio using HTML, JS, and CSS.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="experience"  data-aos="fade-up">
+        <h2>Pengalaman</h2>
+        <div class="experience-content">
+            <center><p>Juara 1 Penyaji Terbaik Musik Tradisi Se Kabupaten Pesawaran <br>Juara 1 Liga Musik Se Provinsi Lampung <br>Anggota Forum Anak Kabupaten Pesawaran <br>Anggota GAK Cabang Kabupaten Pesawaran</p></center>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="submit">
+            <input type="text" placeholder="Your Name" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p> &copy; diniaslepet@gmail.com  ig; @dniaftri_</p>
+    </footer> 
+
+    <button id="scrollToTop" onclick="scrollToTop()">Top</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
